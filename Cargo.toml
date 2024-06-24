@@ -6,9 +6,9 @@ readme = "README.md"
 license = "MIT"
 authors = ["extrawurst <mail@rusticorn.com>"]
 documentation = "https://docs.rs/bevy_device_lang"
-repository = "https://github.com/rustunit/bevy_device_lang"
+repository = "https://github.com/ka-de/bevy_device_lang"
 keywords = ["bevy", "gamedev", "mobile", "crossplatform"]
-description = "Crossplatform way to query device language setting"
+description = "Cross platform way to query device language setting"
 
 [package.metadata.docs.rs]
 default-target = "x86_64-apple-darwin"
@@ -27,6 +27,6 @@ features = ["Navigator", "Window"]
 
 [target.'cfg(target_os = "windows")'.dependencies]
 windows = { version = "0.57", features = [
-    "Win32_Globalization",
-    "Win32_System_SystemServices",
+  "Win32_Globalization",
+  "Win32_System_SystemServices",
 ] }
